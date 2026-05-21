@@ -72,17 +72,18 @@ h1 {
     align-items: center;
     gap: 20px;
     padding: 10px;
-    background-color: rgba(233, 196, 106, 0.9);
+    background-color: var(--accent2-color);
     border-radius: 10px;
 }
 
 .hero article img {
     width: 125px;
     height: auto;
+    float: right;
 
 }
 
 .hero article p {
-    color: #000;
+    color: var(--secondary-color);
     margin: 0;
 }
