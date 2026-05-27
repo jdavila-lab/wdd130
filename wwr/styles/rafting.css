@@ -62,7 +62,7 @@ h1 {
     text-align: center;
 
     background-color: var(--accent1-color);
-    color: white;
+    color: var(--secondary-color);
 }
 
 .hero article {
@@ -71,7 +71,7 @@ h1 {
     padding: 10px;
     margin: 10px;
     display: flex;
-
+    float: right;
     background-color: var(--accent2-color);
     color: white;
 
