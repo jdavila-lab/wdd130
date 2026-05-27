@@ -118,12 +118,11 @@ nav {
 }
 
 nav ul {
-
     display: flex;
     align-items: center;
     justify-content: center;
     list-style: none;
-    gap: 15px;
+    gap: 30px;
 }
 
 nav a {
@@ -133,7 +132,6 @@ nav a {
 }
 
 .adventure-gallery {
-
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -154,16 +152,4 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-@media (max-width: 768px) {
-
-    nav ul {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    .adventure-gallery {
-        flex-wrap: wrap;
-    }
 }
