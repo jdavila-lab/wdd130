@@ -73,14 +73,13 @@ h1 {
     display: flex;
     float: right;
     background-color: var(--accent2-color);
-    color: white;
 
 }
 
 .hero article img {
     width: 125px;
     height: auto;
-
+    float: right;
 }
 
 .hero article p {
