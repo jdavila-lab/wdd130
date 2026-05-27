@@ -21,7 +21,7 @@ body {
 header,
 main,
 footer {
-    max-width: 840px;
+    width: 840px;
     margin: 0 auto;
 }
 
