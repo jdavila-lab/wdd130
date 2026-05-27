@@ -21,8 +21,7 @@ body {
 header,
 main,
 footer {
-    max-width: 840px;
-    width: 100%;
+    width: 840px;
     margin: 0 auto;
 }
 
@@ -97,11 +96,6 @@ header img {
     width: 100px;
 }
 
-button {
-    background-color: var(--secondary-color);
-    color: var(--accent2-color);
-}
-
 header {
     display: grid;
     grid-template-columns: 150px 1fr;
@@ -112,16 +106,17 @@ header {
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 20px;
 }
 
 nav ul {
+    position: absolute;
     display: flex;
+    gap: 30px;
+    left: 42%;
+
     list-style: none;
-    gap: 70px;
-    justify-content: center;
-    align-items: center;
 }
 
 nav a {
@@ -143,5 +138,5 @@ nav a {
 
 .adventure-gallery img {
     width: 100%;
-    height: auto;
+    height: 100px;
 }
