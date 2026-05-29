@@ -76,6 +76,7 @@ contact-info {
     font-weight: bold;
     margin-bottom: 10px;
     font-family: var(--heading-font);
+    text-align: center;
 }
 
 .contact-info p {
