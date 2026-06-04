@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="White Water Rafting Adventures">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | White Water Rafting</title>
+    <meta name="description"
+      content="Exciting Expedition Rafting offers safe and thrilling whitewater rafting adventures for all skill levels. Explore our trips and join the adventure today.">
+    <title>Home | Exciting Expedition Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -14,10 +15,12 @@
     <header>
         <img src="images/logo.jpg" alt="Rafting Logo">
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -34,11 +37,11 @@
             <h2>Join Our Newsletter</h2>
 
             <form>
-                <label>Name</label>
-                <input type="text" placeholder="Name" required>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
 
-                <label>Email</label>
-                <input type="email" placeholder="Email" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
 
                 <button type="submit">Subscribe</button>
             </form>
@@ -51,10 +54,10 @@
         </section>
 
         <!-- Grid Content -->
-        <section class="home-grid">
+        <div class="home-grid">
 
             <div>
-                <img src="images/profile.jpg" alt="Rafting Team">
+                <img src="images/mission.jpg" alt="Rafting Team">
                 <h3>Our Mission</h3>
                 <p>
                     We provide exciting and safe rafting experiences
@@ -71,7 +74,7 @@
                 </p>
             </div>
 
-        </section>
+        </div>
 
     </main>
 

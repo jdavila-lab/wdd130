@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Explore our rafting trips">
+    <meta name="description"
+      content="Explore our exciting rafting trips, from beginner-friendly river adventures to thrilling whitewater rapids. Find the perfect experience for your next outdoor adventure.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trips | White Water Rafting</title>
+    <title>Trips | Exciting Expedition Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -14,10 +15,12 @@
     <header>
         <img src="images/logo.jpg" alt="Rafting Logo">
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html" class="active">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -60,38 +63,41 @@
         </section>
 
         <!-- Table -->
-        <section>
+        <section class="table-section">
             <h2>Available Trips</h2>
 
             <table>
-                <tr>
-                    <th>Trip</th>
-                    <th>Duration</th>
-                    <th>Difficulty</th>
-                    <th>Price</th>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Trip</th>
+                        <th>Duration</th>
+                        <th>Difficulty</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
 
-                <tr>
-                    <td>Beginner Adventure</td>
-                    <td>2 Hours</td>
-                    <td>Easy</td>
-                    <td>$50</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td>Beginner Adventure</td>
+                        <td>2 Hours</td>
+                        <td>Easy</td>
+                        <td>$50</td>
+                    </tr>
 
-                <tr>
-                    <td>Family Float</td>
-                    <td>3 Hours</td>
-                    <td>Moderate</td>
-                    <td>$75</td>
-                </tr>
+                    <tr>
+                        <td>Family Float</td>
+                        <td>3 Hours</td>
+                        <td>Moderate</td>
+                        <td>$75</td>
+                    </tr>
 
-                <tr>
-                    <td>Extreme Rapids</td>
-                    <td>Full Day</td>
-                    <td>Hard</td>
-                    <td>$120</td>
-                </tr>
-
+                    <tr>
+                        <td>Extreme Rapids</td>
+                        <td>Full Day</td>
+                        <td>Hard</td>
+                        <td>$120</td>
+                    </tr>
+                </tbody>
             </table>
         </section>
 
