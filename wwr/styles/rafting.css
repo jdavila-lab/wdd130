@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&display=swap');
 
 *,
 *::before,
@@ -193,7 +193,7 @@ header nav a.active {
 
 .hero article {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     display: flex;
     align-items: center;
     gap: 1.5rem;
@@ -201,6 +201,7 @@ header nav a.active {
     backdrop-filter: blur(4px);
     padding: 1.5rem 2.5rem;
     width: 100%;
+
 }
 
 .hero article img {
@@ -325,7 +326,15 @@ main > section:first-of-type {
 }
 
 .newsletter form label {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 .newsletter form input {
@@ -499,8 +508,7 @@ main > section:first-of-type {
 
 /* trip table */
 
-section:has(> table),
-section:has(> h2 + table) {
+.table-section {
     background: var(--white);
     padding: var(--section-v) 2.5rem;
 }
@@ -516,8 +524,7 @@ table {
     box-shadow: var(--shadow-card);
 }
 
-thead tr,
-tr:first-child:has(th) {
+thead tr {
     background: var(--river);
 }
 
@@ -540,13 +547,11 @@ td {
     vertical-align: middle;
 }
 
-tbody tr:last-child td,
-tr:last-child td {
+tbody tr:last-child td {
     border-bottom: none;
 }
 
-tbody tr:hover td,
-tr:not(:first-child):hover td {
+tbody tr:hover td {
     background: var(--foam);
     transition: background 0.15s;
 }
@@ -715,6 +720,7 @@ td:last-child {
 }
 
 .employees h2 {
+    text-align: center;
     font-family: var(--ff-display);
     font-size: clamp(2rem, 4vw, 2.6rem);
     color: var(--river);
@@ -726,6 +732,7 @@ td:last-child {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: var(--gap);
+
 }
 
 .employee-gallery figure {
